@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Contact us</title>
+        <link rel="stylesheet" href="Edith.css">
+    
+    </head>
+    <header>
+        <img src="Images/call.jpg" class="logo" style="width:30; height:30;">
+    </header>
+    <body>
+    <section id="Contact">
+    <div class="container Contact-row">
+    <div class="Contact-left-col">
+        <h1 style="text-align: center;"><b>CONTACT US</h1>
+        <form name="myform" method="post" action="mailto:edithchepkorir76@gmail.com" onsubmit="return validateform()">
+            <div class="IMAGE">
+                <img src="Images/cntc.jpg"style="height: 80%;width:50%">
+            </div>
+            <legend>sign up to create an account with us:</legend>
+            <input type="text" name="name" placeholder="Enter Name"><br>
+            <input type="email"placeholder="Enter Email"><br>
+            <input type="password" name="password" placeholder="Enter Password">
+            <div class="btn-box">
+                <button class="common-btn" type="submit" value="Sign Up">Sign Up</button>
+                <button class="common-btn" type="submit" value="Log In">Log In</button>
+            </div>
+        </form>
+        <div class="line">
+            <span class="line-1"></span><br>
+            <span class="line-2"></span><br>
+            <span class="line-3"></span>
+        </div>
+        </div>
+       
+    </div>
+</section>
+<script>  
+    function validateform(){  
+    var name=document.myform.name.value;  
+    var password=document.myform.password.value;  
+      
+    if (name==null || name==""){  
+      alert("Name can't be blank");  
+      return false;  
+    }else if(password.length<6){  
+      alert("Password must be at least 6 characters long.");  
+      return false;  
+      }  
+    }  
+    </script> 
+    </body>
+    </html>
